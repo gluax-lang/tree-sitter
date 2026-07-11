@@ -1,0 +1,11 @@
+{
+  "name": "tree-sitter-gluax",
+  "version": "0.0.1",
+  "main": "bindings/node",
+  "tree-sitter": [
+    {
+      "scope": "source.gluax",
+      "file-types": ["gluax"]
+    }
+  ]
+}

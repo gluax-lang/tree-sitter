@@ -1,0 +1,17 @@
+{
+  "grammars": [
+    {
+      "name": "gluax",
+      "camelcase": "Gluax",
+      "scope": "source.gluax",
+      "path": ".",
+      "file-types": ["gluax"]
+    }
+  ],
+  "metadata": {
+    "version": "0.0.1",
+    "license": "MIT",
+    "description": "Gluax grammar for tree-sitter",
+    "authors": [{ "name": "srlion" }]
+  }
+}

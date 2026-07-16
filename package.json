@@ -5,7 +5,9 @@
   "tree-sitter": [
     {
       "scope": "source.gluax",
-      "file-types": ["gluax"]
+      "file-types": [
+        "gluax"
+      ]
     }
   ]
 }

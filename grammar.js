@@ -339,8 +339,10 @@ module.exports = grammar({
     method_call_expression: $ => prec.right(PREC.postfix, seq(
       field('receiver', $._expression),
       ':',
-      field('method', $.identifier),
-      field('arguments', $.argument_list),
+      optional(seq(
+        field('method', $.identifier),
+        optional(field('arguments', $.argument_list)),
+      )),
       optional('!'),
       optional($.catch_clause),
     )),

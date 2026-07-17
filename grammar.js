@@ -44,7 +44,6 @@ function exprChoices($) {
     $.throw_expression,
     $.match_expression,
     $.type_match_expression,
-    $.vec_init,
     $.map_init,
     $.cast_expression,
     $.super_path,
@@ -468,10 +467,6 @@ module.exports = grammar({
       field('value', $._expression),
     ),
 
-    vec_init: $ => choice(
-      seq('vec', optional(seq('::', '<', $._type, '>')), '[', commaSep($._expression), ']'),
-      seq('[', commaSep($._expression), ']'),
-    ),
     map_init: $ => seq(
       'map',
       optional(seq('::', '<', $._type, optional(seq(',', $._type)), '>')),
@@ -499,7 +494,6 @@ module.exports = grammar({
       $.func_type,
       $.tuple_type,
       $.vararg_type,
-      $.vec_type,
       $.map_type,
       $.union_type,
       $.unreachable_type,
@@ -515,10 +509,6 @@ module.exports = grammar({
       optional($.return_types),
     ),
     tuple_type: $ => seq('(', commaSep($._type), ')'),
-    vec_type: $ => choice(
-      seq('vec', '<', $._type, '>'),
-      seq('[', $._type, ']'),
-    ),
     map_type: $ => seq('map', '<', $._type, ',', $._type, '>'),
     union_type: $ => prec.left(1, seq($._type, '|', $._type)),
 

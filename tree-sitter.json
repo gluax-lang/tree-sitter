@@ -9,7 +9,7 @@
     }
   ],
   "metadata": {
-    "version": "0.0.1",
+    "version": "0.0.2",
     "license": "MIT",
     "description": "Gluax grammar for tree-sitter",
     "authors": [{ "name": "srlion" }]

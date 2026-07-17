@@ -178,10 +178,11 @@ module.exports = grammar({
     let_item: $ => seq(
       optional($.attributes),
       optional('pub'),
-      choice('let', 'const'),
+      'let',
+      optional('mut'),
       commaSep1($._let_binding),
       choice(
-        ';',                                    // extern
+        ';',
         seq('=', commaSep1($._expression), ';'),
       ),
     ),
@@ -265,7 +266,8 @@ module.exports = grammar({
     ),
 
     let_stmt: $ => seq(
-      choice('let', 'const'),
+      'let',
+      optional('mut'),
       commaSep1(seq(
         field('name', $._binding_name),
         optional(seq(':', field('type', $._type))),

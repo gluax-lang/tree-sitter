@@ -6230,10 +6230,6 @@
     "named": false
   },
   {
-    "type": "const",
-    "named": false
-  },
-  {
     "type": "continue",
     "named": false
   },
@@ -6296,6 +6292,10 @@
   },
   {
     "type": "match",
+    "named": false
+  },
+  {
+    "type": "mut",
     "named": false
   },
   {

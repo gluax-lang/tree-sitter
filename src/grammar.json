@@ -3475,15 +3475,31 @@
       "members": [
         {
           "type": "STRING",
-          "value": "typematch"
+          "value": "match"
+        },
+        {
+          "type": "STRING",
+          "value": "@"
+        },
+        {
+          "type": "STRING",
+          "value": "type"
+        },
+        {
+          "type": "STRING",
+          "value": "("
         },
         {
           "type": "FIELD",
           "name": "value",
           "content": {
             "type": "SYMBOL",
-            "name": "_condition_expr"
+            "name": "_expression"
           }
+        },
+        {
+          "type": "STRING",
+          "value": ")"
         },
         {
           "type": "STRING",

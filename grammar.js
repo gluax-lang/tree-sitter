@@ -443,8 +443,9 @@ module.exports = grammar({
     ),
 
     type_match_expression: $ => seq(
-      'typematch',
-      field('value', $._condition_expr),
+      'match', '@', 'type', '(',
+      field('value', $._expression),
+      ')',
       '{',
       repeat($.type_match_arm),
       '}',

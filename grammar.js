@@ -46,6 +46,7 @@ function exprChoices($) {
     $.type_match_expression,
     $.map_init,
     $.array_init,
+    $.record_init,
     $.cast_expression,
     $.super_path,
     $.block,
@@ -492,6 +493,16 @@ module.exports = grammar({
       ':',
       field('value', $._expression),
     ),
+    record_init: $ => seq(
+      '.', '{',
+      commaSep($.record_init_field),
+      '}',
+    ),
+    record_init_field: $ => seq(
+      field('name', $.identifier),
+      ':',
+      field('value', $._expression),
+    ),
 
     cast_expression: $ => seq(
       '@', 'cast', '(',
@@ -508,6 +519,7 @@ module.exports = grammar({
       $.tuple_type,
       $.vararg_type,
       $.map_type,
+      $.record_type,
       $.union_type,
       $.unreachable_type,
       $.path,
@@ -523,6 +535,16 @@ module.exports = grammar({
     ),
     tuple_type: $ => seq('(', commaSep($._type), ')'),
     map_type: $ => seq('map', '<', $._type, ',', $._type, '>'),
+    record_type: $ => seq(
+      '{',
+      commaSep($.record_type_field),
+      '}',
+    ),
+    record_type_field: $ => seq(
+      field('name', $.identifier),
+      ':',
+      field('type', $._type),
+    ),
     union_type: $ => prec.left(1, seq($._type, '|', $._type)),
 
     // ---------- Paths & atoms ----------

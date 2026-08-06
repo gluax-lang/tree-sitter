@@ -1,6 +1,6 @@
 {
   "name": "tree-sitter-gluax",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "bindings/node",
   "tree-sitter": [
     {

@@ -96,6 +96,10 @@
           "named": true
         },
         {
+          "type": "record_init",
+          "named": true
+        },
+        {
           "type": "string",
           "named": true
         },
@@ -240,6 +244,14 @@
         },
         {
           "type": "path",
+          "named": true
+        },
+        {
+          "type": "record_init",
+          "named": true
+        },
+        {
+          "type": "record_type",
           "named": true
         },
         {
@@ -391,6 +403,10 @@
         },
         {
           "type": "path",
+          "named": true
+        },
+        {
+          "type": "record_init",
           "named": true
         },
         {
@@ -596,6 +612,10 @@
           },
           {
             "type": "path",
+            "named": true
+          },
+          {
+            "type": "record_init",
             "named": true
           },
           {
@@ -819,6 +839,10 @@
             "named": true
           },
           {
+            "type": "record_init",
+            "named": true
+          },
+          {
             "type": "string",
             "named": true
           },
@@ -1016,6 +1040,10 @@
             "named": true
           },
           {
+            "type": "record_init",
+            "named": true
+          },
+          {
             "type": "string",
             "named": true
           },
@@ -1162,6 +1190,10 @@
             "named": true
           },
           {
+            "type": "record_init",
+            "named": true
+          },
+          {
             "type": "string",
             "named": true
           },
@@ -1217,6 +1249,10 @@
           },
           {
             "type": "path",
+            "named": true
+          },
+          {
+            "type": "record_type",
             "named": true
           },
           {
@@ -1458,6 +1494,10 @@
             "named": true
           },
           {
+            "type": "record_type",
+            "named": true
+          },
+          {
             "type": "tuple_type",
             "named": true
           },
@@ -1620,6 +1660,10 @@
             "named": true
           },
           {
+            "type": "record_init",
+            "named": true
+          },
+          {
             "type": "string",
             "named": true
           },
@@ -1691,6 +1735,10 @@
           },
           {
             "type": "path",
+            "named": true
+          },
+          {
+            "type": "record_type",
             "named": true
           },
           {
@@ -1854,6 +1902,10 @@
           "named": true
         },
         {
+          "type": "record_init",
+          "named": true
+        },
+        {
           "type": "string",
           "named": true
         },
@@ -1999,6 +2051,10 @@
             "named": true
           },
           {
+            "type": "record_init",
+            "named": true
+          },
+          {
             "type": "string",
             "named": true
           },
@@ -2141,6 +2197,10 @@
             "named": true
           },
           {
+            "type": "record_init",
+            "named": true
+          },
+          {
             "type": "string",
             "named": true
           },
@@ -2264,6 +2324,10 @@
           },
           {
             "type": "path",
+            "named": true
+          },
+          {
+            "type": "record_init",
             "named": true
           },
           {
@@ -2403,6 +2467,10 @@
             "named": true
           },
           {
+            "type": "record_init",
+            "named": true
+          },
+          {
             "type": "string",
             "named": true
           },
@@ -2526,6 +2594,10 @@
           },
           {
             "type": "path",
+            "named": true
+          },
+          {
+            "type": "record_init",
             "named": true
           },
           {
@@ -2742,6 +2814,10 @@
             "named": true
           },
           {
+            "type": "record_type",
+            "named": true
+          },
+          {
             "type": "tuple_type",
             "named": true
           },
@@ -2864,6 +2940,10 @@
             "named": true
           },
           {
+            "type": "record_init",
+            "named": true
+          },
+          {
             "type": "string",
             "named": true
           },
@@ -2945,6 +3025,10 @@
           },
           {
             "type": "path",
+            "named": true
+          },
+          {
+            "type": "record_type",
             "named": true
           },
           {
@@ -3170,6 +3254,10 @@
             "named": true
           },
           {
+            "type": "record_init",
+            "named": true
+          },
+          {
             "type": "string",
             "named": true
           },
@@ -3300,6 +3388,10 @@
             "named": true
           },
           {
+            "type": "record_init",
+            "named": true
+          },
+          {
             "type": "string",
             "named": true
           },
@@ -3375,6 +3467,10 @@
           },
           {
             "type": "path",
+            "named": true
+          },
+          {
+            "type": "record_type",
             "named": true
           },
           {
@@ -3493,6 +3589,10 @@
           "named": true
         },
         {
+          "type": "record_init",
+          "named": true
+        },
+        {
           "type": "string",
           "named": true
         },
@@ -3567,6 +3667,10 @@
           },
           {
             "type": "path",
+            "named": true
+          },
+          {
+            "type": "record_type",
             "named": true
           },
           {
@@ -3678,6 +3782,10 @@
         },
         {
           "type": "path",
+          "named": true
+        },
+        {
+          "type": "record_init",
           "named": true
         },
         {
@@ -3842,6 +3950,10 @@
             "named": true
           },
           {
+            "type": "record_init",
+            "named": true
+          },
+          {
             "type": "string",
             "named": true
           },
@@ -3972,6 +4084,10 @@
             "named": true
           },
           {
+            "type": "record_init",
+            "named": true
+          },
+          {
             "type": "string",
             "named": true
           },
@@ -4040,6 +4156,10 @@
           "named": true
         },
         {
+          "type": "record_type",
+          "named": true
+        },
+        {
           "type": "tuple_type",
           "named": true
         },
@@ -4080,6 +4200,10 @@
         },
         {
           "type": "path",
+          "named": true
+        },
+        {
+          "type": "record_type",
           "named": true
         },
         {
@@ -4195,6 +4319,10 @@
           },
           {
             "type": "path",
+            "named": true
+          },
+          {
+            "type": "record_init",
             "named": true
           },
           {
@@ -4337,6 +4465,10 @@
           },
           {
             "type": "path",
+            "named": true
+          },
+          {
+            "type": "record_init",
             "named": true
           },
           {
@@ -4569,6 +4701,10 @@
             "named": true
           },
           {
+            "type": "record_init",
+            "named": true
+          },
+          {
             "type": "string",
             "named": true
           },
@@ -4647,6 +4783,10 @@
           "named": true
         },
         {
+          "type": "record_type",
+          "named": true
+        },
+        {
           "type": "tuple_type",
           "named": true
         },
@@ -4697,6 +4837,10 @@
           },
           {
             "type": "path",
+            "named": true
+          },
+          {
+            "type": "record_type",
             "named": true
           },
           {
@@ -4831,6 +4975,10 @@
           "named": true
         },
         {
+          "type": "record_init",
+          "named": true
+        },
+        {
           "type": "string",
           "named": true
         },
@@ -4886,6 +5034,244 @@
           "named": true
         }
       ]
+    }
+  },
+  {
+    "type": "record_init",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "record_init_field",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "record_init_field",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      },
+      "value": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "array_init",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "block",
+            "named": true
+          },
+          {
+            "type": "bool",
+            "named": true
+          },
+          {
+            "type": "break_expression",
+            "named": true
+          },
+          {
+            "type": "call_expression",
+            "named": true
+          },
+          {
+            "type": "cast_expression",
+            "named": true
+          },
+          {
+            "type": "class_init",
+            "named": true
+          },
+          {
+            "type": "continue_expression",
+            "named": true
+          },
+          {
+            "type": "field_expression",
+            "named": true
+          },
+          {
+            "type": "for_expression",
+            "named": true
+          },
+          {
+            "type": "func_expression",
+            "named": true
+          },
+          {
+            "type": "if_expression",
+            "named": true
+          },
+          {
+            "type": "index_expression",
+            "named": true
+          },
+          {
+            "type": "loop_expression",
+            "named": true
+          },
+          {
+            "type": "map_init",
+            "named": true
+          },
+          {
+            "type": "match_expression",
+            "named": true
+          },
+          {
+            "type": "method_call_expression",
+            "named": true
+          },
+          {
+            "type": "nil",
+            "named": true
+          },
+          {
+            "type": "number",
+            "named": true
+          },
+          {
+            "type": "paren_expression",
+            "named": true
+          },
+          {
+            "type": "path",
+            "named": true
+          },
+          {
+            "type": "record_init",
+            "named": true
+          },
+          {
+            "type": "string",
+            "named": true
+          },
+          {
+            "type": "super_path",
+            "named": true
+          },
+          {
+            "type": "throw_expression",
+            "named": true
+          },
+          {
+            "type": "tuple_expression",
+            "named": true
+          },
+          {
+            "type": "type_match_expression",
+            "named": true
+          },
+          {
+            "type": "unary_expression",
+            "named": true
+          },
+          {
+            "type": "unwrap_expression",
+            "named": true
+          },
+          {
+            "type": "vararg",
+            "named": true
+          },
+          {
+            "type": "while_expression",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "record_type",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "record_type_field",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "record_type_field",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      },
+      "type": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "func_type",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "optional_type",
+            "named": true
+          },
+          {
+            "type": "path",
+            "named": true
+          },
+          {
+            "type": "record_type",
+            "named": true
+          },
+          {
+            "type": "tuple_type",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          },
+          {
+            "type": "unreachable_type",
+            "named": true
+          },
+          {
+            "type": "vararg_type",
+            "named": true
+          }
+        ]
+      }
     }
   },
   {
@@ -4985,6 +5371,10 @@
           "named": true
         },
         {
+          "type": "record_init",
+          "named": true
+        },
+        {
           "type": "string",
           "named": true
         },
@@ -5045,6 +5435,10 @@
         },
         {
           "type": "path",
+          "named": true
+        },
+        {
+          "type": "record_type",
           "named": true
         },
         {
@@ -5223,6 +5617,10 @@
           "named": true
         },
         {
+          "type": "record_init",
+          "named": true
+        },
+        {
           "type": "string",
           "named": true
         },
@@ -5358,6 +5756,10 @@
           "named": true
         },
         {
+          "type": "record_init",
+          "named": true
+        },
+        {
           "type": "string",
           "named": true
         },
@@ -5421,6 +5823,10 @@
           "named": true
         },
         {
+          "type": "record_type",
+          "named": true
+        },
+        {
           "type": "tuple_type",
           "named": true
         },
@@ -5461,6 +5867,10 @@
         },
         {
           "type": "path",
+          "named": true
+        },
+        {
+          "type": "record_type",
           "named": true
         },
         {
@@ -5593,6 +6003,10 @@
             "named": true
           },
           {
+            "type": "record_init",
+            "named": true
+          },
+          {
             "type": "string",
             "named": true
           },
@@ -5652,6 +6066,10 @@
           },
           {
             "type": "path",
+            "named": true
+          },
+          {
+            "type": "record_type",
             "named": true
           },
           {
@@ -5768,6 +6186,10 @@
           },
           {
             "type": "path",
+            "named": true
+          },
+          {
+            "type": "record_init",
             "named": true
           },
           {
@@ -5939,6 +6361,10 @@
             "named": true
           },
           {
+            "type": "record_init",
+            "named": true
+          },
+          {
             "type": "string",
             "named": true
           },
@@ -6000,6 +6426,10 @@
         },
         {
           "type": "path",
+          "named": true
+        },
+        {
+          "type": "record_type",
           "named": true
         },
         {
@@ -6118,6 +6548,10 @@
           "named": true
         },
         {
+          "type": "record_init",
+          "named": true
+        },
+        {
           "type": "string",
           "named": true
         },
@@ -6221,6 +6655,10 @@
         },
         {
           "type": "path",
+          "named": true
+        },
+        {
+          "type": "record_type",
           "named": true
         },
         {
@@ -6342,6 +6780,10 @@
           },
           {
             "type": "path",
+            "named": true
+          },
+          {
+            "type": "record_init",
             "named": true
           },
           {

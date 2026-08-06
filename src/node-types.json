@@ -8,6 +8,10 @@
       "required": false,
       "types": [
         {
+          "type": "array_init",
+          "named": true
+        },
+        {
           "type": "binary_expression",
           "named": true
         },
@@ -131,6 +135,169 @@
     }
   },
   {
+    "type": "array_init",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "array_init",
+          "named": true
+        },
+        {
+          "type": "binary_expression",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool",
+          "named": true
+        },
+        {
+          "type": "break_expression",
+          "named": true
+        },
+        {
+          "type": "call_expression",
+          "named": true
+        },
+        {
+          "type": "cast_expression",
+          "named": true
+        },
+        {
+          "type": "class_init",
+          "named": true
+        },
+        {
+          "type": "continue_expression",
+          "named": true
+        },
+        {
+          "type": "field_expression",
+          "named": true
+        },
+        {
+          "type": "for_expression",
+          "named": true
+        },
+        {
+          "type": "func_expression",
+          "named": true
+        },
+        {
+          "type": "func_type",
+          "named": true
+        },
+        {
+          "type": "if_expression",
+          "named": true
+        },
+        {
+          "type": "index_expression",
+          "named": true
+        },
+        {
+          "type": "loop_expression",
+          "named": true
+        },
+        {
+          "type": "map_init",
+          "named": true
+        },
+        {
+          "type": "map_type",
+          "named": true
+        },
+        {
+          "type": "match_expression",
+          "named": true
+        },
+        {
+          "type": "method_call_expression",
+          "named": true
+        },
+        {
+          "type": "nil",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        },
+        {
+          "type": "optional_type",
+          "named": true
+        },
+        {
+          "type": "paren_expression",
+          "named": true
+        },
+        {
+          "type": "path",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        },
+        {
+          "type": "super_path",
+          "named": true
+        },
+        {
+          "type": "throw_expression",
+          "named": true
+        },
+        {
+          "type": "tuple_expression",
+          "named": true
+        },
+        {
+          "type": "tuple_type",
+          "named": true
+        },
+        {
+          "type": "type_match_expression",
+          "named": true
+        },
+        {
+          "type": "unary_expression",
+          "named": true
+        },
+        {
+          "type": "union_type",
+          "named": true
+        },
+        {
+          "type": "unreachable_type",
+          "named": true
+        },
+        {
+          "type": "unwrap_expression",
+          "named": true
+        },
+        {
+          "type": "vararg",
+          "named": true
+        },
+        {
+          "type": "vararg_type",
+          "named": true
+        },
+        {
+          "type": "while_expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "assign_stmt",
     "named": true,
     "fields": {},
@@ -138,6 +305,10 @@
       "multiple": true,
       "required": true,
       "types": [
+        {
+          "type": "array_init",
+          "named": true
+        },
         {
           "type": "binary_expression",
           "named": true
@@ -335,6 +506,10 @@
         "multiple": false,
         "required": true,
         "types": [
+          {
+            "type": "array_init",
+            "named": true
+          },
           {
             "type": "binary_expression",
             "named": true
@@ -552,6 +727,10 @@
         "required": true,
         "types": [
           {
+            "type": "array_init",
+            "named": true
+          },
+          {
             "type": "binary_expression",
             "named": true
           },
@@ -745,6 +924,10 @@
         "required": true,
         "types": [
           {
+            "type": "array_init",
+            "named": true
+          },
+          {
             "type": "binary_expression",
             "named": true
           },
@@ -886,6 +1069,10 @@
         "multiple": false,
         "required": true,
         "types": [
+          {
+            "type": "array_init",
+            "named": true
+          },
           {
             "type": "binary_expression",
             "named": true
@@ -1228,10 +1415,6 @@
         {
           "type": "class_field",
           "named": true
-        },
-        {
-          "type": "class_func",
-          "named": true
         }
       ]
     }
@@ -1301,72 +1484,6 @@
     }
   },
   {
-    "type": "class_func",
-    "named": true,
-    "fields": {
-      "body": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "block",
-            "named": true
-          }
-        ]
-      },
-      "errorable": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "!",
-            "named": false
-          }
-        ]
-      },
-      "name": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "identifier",
-            "named": true
-          }
-        ]
-      },
-      "params": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "param_list",
-            "named": true
-          }
-        ]
-      },
-      "returns": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "return_types",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": false,
-      "required": false,
-      "types": [
-        {
-          "type": "attributes",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
     "type": "class_init",
     "named": true,
     "fields": {
@@ -1410,6 +1527,10 @@
         "multiple": false,
         "required": true,
         "types": [
+          {
+            "type": "array_init",
+            "named": true
+          },
           {
             "type": "binary_expression",
             "named": true
@@ -1641,6 +1762,10 @@
       "required": true,
       "types": [
         {
+          "type": "array_init",
+          "named": true
+        },
+        {
           "type": "binary_expression",
           "named": true
         },
@@ -1781,6 +1906,10 @@
         "multiple": false,
         "required": true,
         "types": [
+          {
+            "type": "array_init",
+            "named": true
+          },
           {
             "type": "binary_expression",
             "named": true
@@ -1924,6 +2053,10 @@
         "required": false,
         "types": [
           {
+            "type": "array_init",
+            "named": true
+          },
+          {
             "type": "binary_expression",
             "named": true
           },
@@ -2045,6 +2178,10 @@
         "multiple": false,
         "required": false,
         "types": [
+          {
+            "type": "array_init",
+            "named": true
+          },
           {
             "type": "binary_expression",
             "named": true
@@ -2178,6 +2315,10 @@
         "required": false,
         "types": [
           {
+            "type": "array_init",
+            "named": true
+          },
+          {
             "type": "binary_expression",
             "named": true
           },
@@ -2299,6 +2440,10 @@
         "multiple": false,
         "required": false,
         "types": [
+          {
+            "type": "array_init",
+            "named": true
+          },
           {
             "type": "binary_expression",
             "named": true
@@ -2535,11 +2680,15 @@
       }
     },
     "children": {
-      "multiple": false,
+      "multiple": true,
       "required": false,
       "types": [
         {
           "type": "attributes",
+          "named": true
+        },
+        {
+          "type": "generic_params",
           "named": true
         }
       ]
@@ -2565,6 +2714,60 @@
     }
   },
   {
+    "type": "generic_params",
+    "named": true,
+    "fields": {
+      "constraint": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "func_type",
+            "named": true
+          },
+          {
+            "type": "map_type",
+            "named": true
+          },
+          {
+            "type": "optional_type",
+            "named": true
+          },
+          {
+            "type": "path",
+            "named": true
+          },
+          {
+            "type": "tuple_type",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          },
+          {
+            "type": "unreachable_type",
+            "named": true
+          },
+          {
+            "type": "vararg_type",
+            "named": true
+          }
+        ]
+      },
+      "name": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
     "type": "if_expression",
     "named": true,
     "fields": {
@@ -2572,6 +2775,10 @@
         "multiple": true,
         "required": true,
         "types": [
+          {
+            "type": "array_init",
+            "named": true
+          },
           {
             "type": "binary_expression",
             "named": true
@@ -2822,11 +3029,15 @@
       }
     },
     "children": {
-      "multiple": false,
+      "multiple": true,
       "required": false,
       "types": [
         {
           "type": "attributes",
+          "named": true
+        },
+        {
+          "type": "generic_params",
           "named": true
         }
       ]
@@ -2866,6 +3077,10 @@
         "multiple": false,
         "required": true,
         "types": [
+          {
+            "type": "array_init",
+            "named": true
+          },
           {
             "type": "binary_expression",
             "named": true
@@ -2992,6 +3207,10 @@
         "multiple": false,
         "required": true,
         "types": [
+          {
+            "type": "array_init",
+            "named": true
+          },
           {
             "type": "binary_expression",
             "named": true
@@ -3177,6 +3396,10 @@
       "multiple": true,
       "required": false,
       "types": [
+        {
+          "type": "array_init",
+          "named": true
+        },
         {
           "type": "attributes",
           "named": true
@@ -3366,6 +3589,10 @@
       "required": true,
       "types": [
         {
+          "type": "array_init",
+          "named": true
+        },
+        {
           "type": "binary_expression",
           "named": true
         },
@@ -3523,6 +3750,10 @@
         "required": true,
         "types": [
           {
+            "type": "array_init",
+            "named": true
+          },
+          {
             "type": "binary_expression",
             "named": true
           },
@@ -3648,6 +3879,10 @@
         "multiple": false,
         "required": true,
         "types": [
+          {
+            "type": "array_init",
+            "named": true
+          },
           {
             "type": "binary_expression",
             "named": true
@@ -3871,6 +4106,10 @@
         "required": true,
         "types": [
           {
+            "type": "array_init",
+            "named": true
+          },
+          {
             "type": "binary_expression",
             "named": true
           },
@@ -4012,6 +4251,10 @@
         "multiple": false,
         "required": true,
         "types": [
+          {
+            "type": "array_init",
+            "named": true
+          },
           {
             "type": "binary_expression",
             "named": true
@@ -4234,6 +4477,10 @@
         "required": true,
         "types": [
           {
+            "type": "array_init",
+            "named": true
+          },
+          {
             "type": "binary_expression",
             "named": true
           },
@@ -4357,11 +4604,15 @@
       }
     },
     "children": {
-      "multiple": false,
+      "multiple": true,
       "required": false,
       "types": [
         {
           "type": "catch_clause",
+          "named": true
+        },
+        {
+          "type": "turbofish",
           "named": true
         }
       ]
@@ -4487,6 +4738,10 @@
       "multiple": false,
       "required": true,
       "types": [
+        {
+          "type": "array_init",
+          "named": true
+        },
         {
           "type": "binary_expression",
           "named": true
@@ -4621,6 +4876,10 @@
         {
           "type": "identifier",
           "named": true
+        },
+        {
+          "type": "turbofish",
+          "named": true
         }
       ]
     }
@@ -4633,6 +4892,10 @@
       "multiple": true,
       "required": false,
       "types": [
+        {
+          "type": "array_init",
+          "named": true
+        },
         {
           "type": "binary_expression",
           "named": true
@@ -4868,6 +5131,10 @@
       "required": true,
       "types": [
         {
+          "type": "array_init",
+          "named": true
+        },
+        {
           "type": "binary_expression",
           "named": true
         },
@@ -4998,6 +5265,10 @@
       "multiple": true,
       "required": true,
       "types": [
+        {
+          "type": "array_init",
+          "named": true
+        },
         {
           "type": "binary_expression",
           "named": true
@@ -5165,6 +5436,49 @@
     }
   },
   {
+    "type": "turbofish",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "func_type",
+          "named": true
+        },
+        {
+          "type": "map_type",
+          "named": true
+        },
+        {
+          "type": "optional_type",
+          "named": true
+        },
+        {
+          "type": "path",
+          "named": true
+        },
+        {
+          "type": "tuple_type",
+          "named": true
+        },
+        {
+          "type": "union_type",
+          "named": true
+        },
+        {
+          "type": "unreachable_type",
+          "named": true
+        },
+        {
+          "type": "vararg_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "type_match_arm",
     "named": true,
     "fields": {
@@ -5186,6 +5500,10 @@
         "multiple": false,
         "required": true,
         "types": [
+          {
+            "type": "array_init",
+            "named": true
+          },
           {
             "type": "binary_expression",
             "named": true
@@ -5361,6 +5679,10 @@
         "required": true,
         "types": [
           {
+            "type": "array_init",
+            "named": true
+          },
+          {
             "type": "binary_expression",
             "named": true
           },
@@ -5524,6 +5846,10 @@
         "multiple": false,
         "required": true,
         "types": [
+          {
+            "type": "array_init",
+            "named": true
+          },
           {
             "type": "binary_expression",
             "named": true
@@ -5699,6 +6025,10 @@
       "multiple": false,
       "required": true,
       "types": [
+        {
+          "type": "array_init",
+          "named": true
+        },
         {
           "type": "binary_expression",
           "named": true
@@ -5926,6 +6256,10 @@
         "multiple": false,
         "required": true,
         "types": [
+          {
+            "type": "array_init",
+            "named": true
+          },
           {
             "type": "binary_expression",
             "named": true
@@ -6344,6 +6678,10 @@
   },
   {
     "type": "use",
+    "named": false
+  },
+  {
+    "type": "vec",
     "named": false
   },
   {

@@ -45,6 +45,7 @@ function exprChoices($) {
     $.match_expression,
     $.type_match_expression,
     $.map_init,
+    $.array_init,
     $.cast_expression,
     $.super_path,
     $.block,
@@ -102,11 +103,20 @@ module.exports = grammar({
       $.cfg_item,
     ),
 
+    generic_params: $ => seq(
+      '<',
+      commaSep1(seq(
+        field('name', $.identifier),
+        optional(seq(':', field('constraint', $._type))),
+      )),
+      '>',
+    ),
     func_item: $ => seq(
       optional($.attributes),
       optional('pub'),
       'func',
       field('name', $.identifier),
+      optional($.generic_params),
       $._func_def,
     ),
 
@@ -144,7 +154,7 @@ module.exports = grammar({
       repeat($._class_member),
       '}',
     ),
-    _class_member: $ => choice($.class_field, $.class_func),
+    _class_member: $ => $.class_field,
     class_field: $ => seq(
       optional($.attributes),
       optional('pub'),
@@ -152,12 +162,6 @@ module.exports = grammar({
       ':',
       field('type', $._type),
       optional(','),
-    ),
-    class_func: $ => seq(
-      optional($.attributes),
-      'func',
-      field('name', $.identifier),
-      $._func_def,
     ),
 
     impl_item: $ => seq(
@@ -172,6 +176,7 @@ module.exports = grammar({
       optional('pub'),
       'func',
       field('name', $.identifier),
+      optional($.generic_params),
       $._func_def,
     ),
 
@@ -342,6 +347,7 @@ module.exports = grammar({
       ':',
       optional(seq(
         field('method', $.identifier),
+        optional($.turbofish),
         optional(field('arguments', $.argument_list)),
       )),
       optional('!'),
@@ -470,6 +476,10 @@ module.exports = grammar({
       field('value', $._expression),
     ),
 
+    array_init: $ => seq(
+      optional(seq('vec', optional(seq('::', '<', $._type, '>')))),
+      '[', commaSep($._expression), ']',
+    ),
     map_init: $ => seq(
       'map',
       optional(seq('::', '<', $._type, optional(seq(',', $._type)), '>')),
@@ -519,7 +529,10 @@ module.exports = grammar({
     path: $ => prec.left(seq(
       $.identifier,
       repeat(seq('::', $.identifier)),
+      optional($.turbofish),
     )),
+
+    turbofish: $ => seq('::', '<', commaSep1($._type), '>'),
 
     _binding_name: $ => choice($.identifier, '_'),
 

@@ -78,7 +78,7 @@ module.exports = grammar({
       field('key', $.identifier),
       optional(choice(
         $.attr_list,
-        seq('=', field('value', $.string)),
+        seq('=', field('value', choice($.string, $.number))),
       )),
       ']',
     ),
@@ -495,8 +495,8 @@ module.exports = grammar({
 
     cast_expression: $ => seq(
       '@', 'cast', '(',
-      field('expr', $._expression), ',',
-      field('type', $._type),
+      field('expr', $._expression),
+      optional(seq(',', field('type', $._type))),
       ')',
     ),
     super_path: $ => seq('@', 'super', $.path),
@@ -539,8 +539,8 @@ module.exports = grammar({
     identifier: $ => /[a-zA-Z_][a-zA-Z0-9_]*/,
     number: $ => /\d[\d_]*(\.\d[\d_]*)?([eE][+-]?\d+)?|0x[0-9a-fA-F_]+/,
     string: $ => choice(
+      token(seq('r#"', /([^"]|"[^#])*/, '"#')),
       seq('"', repeat(choice(/[^"\\]/, /\\./)), '"'),
-      seq("'", repeat(choice(/[^'\\]/, /\\./)), "'"),
     ),
     bool: $ => choice('true', 'false'),
     nil: $ => 'nil',

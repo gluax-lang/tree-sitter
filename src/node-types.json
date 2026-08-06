@@ -466,6 +466,10 @@
         "required": false,
         "types": [
           {
+            "type": "number",
+            "named": true
+          },
+          {
             "type": "string",
             "named": true
           }
@@ -1197,7 +1201,7 @@
       },
       "type": {
         "multiple": false,
-        "required": true,
+        "required": false,
         "types": [
           {
             "type": "func_type",
@@ -6416,10 +6420,6 @@
   },
   {
     "type": "&&",
-    "named": false
-  },
-  {
-    "type": "'",
     "named": false
   },
   {
